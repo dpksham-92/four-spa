@@ -1,0 +1,78 @@
+@media only screen and (max-width:1399px){
+	.location_result .address_cards span{margin-bottom: 14px;}
+}
+
+@media only screen and (max-width:1299px){
+	.nav_links{gap:28px;}
+	.accordian_Step .accordion .accordion-body{max-height: 200px; min-height: 200px}
+	.card_style > .form-check{width: 100%;}
+	.card_style .send_later{width: 100%}
+}
+
+@media only screen and (max-width:1199px){
+	.hero-style .slide-title h2{font-size: 56px; line-height: 60px;}
+	.accordian_Step .accordion .accordion-body{max-height: 123px; min-height: 123px}
+	.people_count div{width: 50px; height: 50px; font-size: 18px; font-weight: 600;}
+}
+
+@media only screen and (max-width:991px){
+	.text_details{max-width: 90%; padding: 24px;}
+	.head_grid .left_nav{  width: 35%;}
+	.head_grid .brand_name{  width: 30%;}
+	.head_grid .right_nav{  width: 35%;}
+	.hero_filter{max-width: 85%;}
+	.hero_filter form div.form-group:first-child {width: 55%;}
+	.hero_filter form div.form-group:nth-child(2) {width: 30%;}
+	.hero_filter form .filter_btn:nth-child(3) {width: 15%;}
+	.in_text{max-width: 50%;}
+	.hero-style .slide-title h2{font-size:42px; line-height:50px;}
+	.treatments .owl-nav button.owl-prev{top: 20%; left: 5%;}
+	.treatments .owl-nav button.owl-next{top: 20%; right: 5%;}
+	.quick_links li a{font-size:28px;}
+	.quick_links{gap: 1rem !important}
+	.page_title{padding: 50px 0px;}
+	.accordian_Step{width: 100%; margin-bottom: 20px;}
+	.accord_steper .gift_img{width: 100%;}
+	.accordian_Step .accordion .accordion-body{max-height:none; min-height: auto}
+	.search_near_by input{max-width: 35%;}
+	.step::before{width: 50%;}
+}
+
+@media only screen and (max-width:767px){
+	.head_grid .left_nav{  width: 30%;}
+	.head_grid .brand_name{  width: 40%;}
+	.head_grid .right_nav{  width: 30%;}
+	.hero_filter form div.form-group:first-child{width: 100%}
+	.hero_filter form div.form-group:nth-child(2) {width:70%;}
+	.hero_filter form .filter_btn:nth-child(3) {width:30%;}
+	.in_text{max-width: 100%;}
+	.hero-slider .hero_filter{display: none;}
+	.hero_filter{position: unset;}
+	.quick_connect {    max-height: 700px;    overflow-y: scroll;    overflow-x: hidden;}
+	.to_know_us:after{content: none;}
+	.padd90{padding:60px 0px}
+	.wellness_quote h4{font-size: 32px; line-height: 45px;}
+	.short_info{position: unset; max-width: 100%;}
+	.gallery_slider .carousel-indicators{bottom: 10px;}
+	.salon_image{padding-bottom: 60px;}
+	.search_near_by label{text-align: center; width: 100%;}
+	.search_near_by input {        max-width: 60%;    }
+	.date_location > div:first-child, .date_location > div:nth-child(2){width: 100%; padding: 20px 0px 20px 0px;}
+	.date_location > div:nth-child(2){border-top: 1px solid #E2E2E2; border-left: 0px;}
+}
+
+@media only screen and (max-width:575px){
+	.treatments .owl-item.active.center .col_item .text_details{		position: unset !important;		max-width:100%;	}
+	.treatments .owl-stage-outer{		padding-bottom: 0px;	}
+	.worn_confidence h2:before{left: -15px}
+	.apply_for_job{width: 100%; padding-left: 0; margin-top: 20px;}
+	.questioning_form h4{font-size:32px;}
+	.promo_sec label{width: 100%}
+	.promo_sec form{width: 100%}
+	.btngrp {flex-wrap: wrap;}
+	.btngrp button{width: 100%}
+	.search_near_by input {        max-width:100%;    }
+	.c_services .tab-content, .serv_item{padding: 16px;}
+	.step::before{width:40%;}
+	.step-number + div{font-size: 12px; letter-spacing: 0px;}
+}

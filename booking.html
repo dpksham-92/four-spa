@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <title>Online Booking</title>
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!-- Links -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="top_head padd10">
+                <div class="container">
+                    <p class="m-0 text-uppercase w-fit-content mx-auto">get 10% off on your first online booking*</p>
+                </div>
+            </div>
+            <div class="main_nav">
+                <div class="container-fluid px-xl-5 px-lg-4 px-md-4 px-sm-4 px-4">
+                    <div class="head_grid">
+                        <div class="left_nav d-flex align-items-center">
+                            <div class="hamburger d-flex flex-column gap-1 me-xl-5 me-lg-4 me-md-4 me-sm-4 me-4">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <ul class="nav_links d-flex align-items-center list-unstyled m-0 p-0 d-lg-flex d-md-none d-sm-none d-none">
+                                <li><a href="javascript:void(0)"
+                                        class="text-uppercase text-decoration-none fw-bold">services</a></li>
+                                <li><a href="javascript:void(0)"
+                                        class="text-uppercase text-decoration-none fw-bold">about</a></li>
+                                <li><a href="javascript:void(0)"
+                                        class="text-uppercase text-decoration-none fw-bold">Location</a></li>
+                            </ul>
+                        </div>
+                        <div class="brand_name text-center">
+                            <a href="index.html" class="w-fit-content mx-auto">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="Four Spa" title="Four Spa">
+                            </a>
+                        </div>
+                        <div class="right_nav d-flex align-items-center justify-content-end">
+                            <ul class="nav_links d-flex align-items-center list-unstyled m-0 p-0 d-lg-flex d-md-none d-sm-none d-none">
+                                <li><a href="javascript:void(0)"
+                                        class="text-uppercase text-decoration-none fw-bold">Gift cards</a></li>
+                                <li><a href="javascript:void(0)"
+                                        class="text-uppercase text-decoration-none fw-bold">Shop Now</a></li>
+                                <li><a href="javascript:void(0)"
+                                        class="text-uppercase text-decoration-none fw-bold fs-5 login_user"><i
+                                            class="fa-regular fa-user"></i></a></li>
+                            </ul>
+                            <a href="javascript:void(0)" class="text-uppercase text-decoration-none fw-bold fs-5 login_user d-xl-none d-lg-none"><i class="fa-regular fa-user"></i></a>
+                            <button class="text-uppercase btn btn-secondary  ms-xxl-5 ms-xl-4 ms-lg-4 ms-md-4 rounded-0 d-xl-block d-lg-none d-md-block d-sm-none d-none">Online Booking</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class=" bg_light_grey padd60">
+            <div class="container">
+                <div class="stepper-container">
+                    <div class="stepper-header mb-5">
+                        <div class="step active" id="step-1-header">
+                            <div class="check-point"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="step-number">1</div>
+                            <div>Location</div>
+                        </div>
+                        <div class="step" id="step-2-header">
+                            <div class="check-point"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="step-number">2</div>
+                            <div>Guests</div>
+                        </div>
+                        <div class="step" id="step-3-header">
+                            <div class="check-point"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="step-number">3</div>
+                            <div>Services</div>
+                        </div>
+                        <div class="step" id="step-4-header">
+                            <div class="check-point"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="step-number">4</div>
+                            <div>Date & time</div>
+                        </div>
+                        <div class="step" id="step-5-header">
+                            <div class="check-point"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="step-number">5</div>
+                            <div>Confirm</div>
+                        </div>
+                        <div class="step" id="step-6-header">
+                            <div class="check-point"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="step-number">6</div>
+                            <div>Success</div>
+                        </div>
+                    </div>
+                    <form id="stepper-form">
+                        <!-- Step 1 -->
+                        <div class="form-step active">
+                            <div class="location bg_light_grey" id="location">
+                                <div class="container">
+                                    <div class="bg-white">
+                                        <div class="search_near_by d-flex flex-wrap align-items-center justify-content-center gap-lg-4 gap-md-4 gap-sm-2 gap-2 py-lg-5 py-md-5 py-sm-4 py-4 px-md-4 px-sm-4 px-3">
+                                            <label class="mb-0 fw-light">Search Near by</label>
+                                            <input type="text" name="location_search" class="form-control rounded-0" placeholder="Enter your City, county">
+                                            <button class="btn btn-primary text-uppercase rounded-0">Search</button>
+                                            <span><i class="fa-solid fa-location-crosshairs"></i></span>
+                                        </div>
+                                        <div class="map_preview">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463877.31242950493!2d46.49288193599672!3d24.725455372447055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sin!4v1753078412673!5m2!1sen!2sin"  height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <div class="location_result near_locations p-lg-5 p-md-5 p-sm-4 p-3">
+                                            <label class="text-uppercase d-block fs-7 fw-semibold mb-3 text-center text-black">6 Location near by you</label>
+                                            <div class="row g-3">
+                                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                    <div class="address_cards">
+                                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                                            <label>Takhasussi Street</label>
+                                                            <a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i></a>
+                                                        </div>
+                                                        <div class="col-xl-9 col-lg-11 col-sm-11 col-11  me-auto">
+                                                            <p class="m-0 fs-7">537, Al Mathar Ash Shamali, Riyadh 12334, Saudi Arabia</p>
+                                                        </div>
+                                                        <div class="d-flex flex-wrap align-items-center justify-content-between mt-2">
+                                                            <span class="text-decoration-underline">Open time : 09:00 - 20:00 &nbsp;<i class="fa-solid fa-chevron-down"></i></span>
+                                                            <button class="btn btn-primary text-uppercase rounded-0">Book now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                    <div class="address_cards">
+                                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                                            <label>Takhasussi Street</label>
+                                                            <a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i></a>
+                                                        </div>
+                                                        <div class="col-xl-9 col-lg-11 col-sm-11 col-11  me-auto">
+                                                            <p class="m-0 fs-7">537, Al Mathar Ash Shamali, Riyadh 12334, Saudi Arabia</p>
+                                                        </div>
+                                                        <div class="d-flex flex-wrap align-items-center justify-content-between mt-2">
+                                                            <span class="text-decoration-underline">Open time : 09:00 - 20:00 &nbsp;<i class="fa-solid fa-chevron-down"></i></span>
+                                                            <button class="btn btn-primary text-uppercase rounded-0">Book now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                    <div class="address_cards">
+                                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                                            <label>Takhasussi Street</label>
+                                                            <a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i></a>
+                                                        </div>
+                                                        <div class="col-xl-9 col-lg-11 col-sm-11 col-11 me-auto">
+                                                            <p class="m-0 fs-7">537, Al Mathar Ash Shamali, Riyadh 12334, Saudi Arabia</p>
+                                                        </div>
+                                                        <div class="d-flex flex-wrap align-items-center justify-content-between mt-2">
+                                                            <span class="text-decoration-underline">Open time : 09:00 - 20:00 &nbsp;<i class="fa-solid fa-chevron-down"></i></span>
+                                                            <button class="btn btn-primary text-uppercase rounded-0">Book now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                    <div class="address_cards">
+                                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                                            <label>Takhasussi Street</label>
+                                                            <a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i></a>
+                                                        </div>
+                                                        <div class="col-xl-9 col-lg-11 col-sm-11 col-11  me-auto">
+                                                            <p class="m-0 fs-7">537, Al Mathar Ash Shamali, Riyadh 12334, Saudi Arabia</p>
+                                                        </div>
+                                                        <div class="d-flex flex-wrap align-items-center justify-content-between mt-2">
+                                                            <span class="text-decoration-underline">Open time : 09:00 - 20:00 &nbsp;<i class="fa-solid fa-chevron-down"></i></span>
+                                                            <button class="btn btn-primary text-uppercase rounded-0">Book now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                    <div class="address_cards">
+                                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                                            <label>Takhasussi Street</label>
+                                                            <a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i></a>
+                                                        </div>
+                                                        <div class="col-xl-9 col-lg-11 col-sm-11 col-11  me-auto">
+                                                            <p class="m-0 fs-7">537, Al Mathar Ash Shamali, Riyadh 12334, Saudi Arabia</p>
+                                                        </div>
+                                                        <div class="d-flex flex-wrap align-items-center justify-content-between mt-2">
+                                                            <span class="text-decoration-underline">Open time : 09:00 - 20:00 &nbsp;<i class="fa-solid fa-chevron-down"></i></span>
+                                                            <button class="btn btn-primary text-uppercase rounded-0">Book now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                    <div class="address_cards">
+                                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                                            <label>Takhasussi Street</label>
+                                                            <a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i></a>
+                                                        </div>
+                                                        <div class="col-xl-9 col-lg-11 col-sm-11 col-11  me-auto">
+                                                            <p class="m-0 fs-7">537, Al Mathar Ash Shamali, Riyadh 12334, Saudi Arabia</p>
+                                                        </div>
+                                                        <div class="d-flex flex-wrap align-items-center justify-content-between mt-2">
+                                                            <span class="text-decoration-underline">Open time : 09:00 - 20:00 &nbsp;<i class="fa-solid fa-chevron-down"></i></span>
+                                                            <button class="btn btn-primary text-uppercase rounded-0">Book now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 pt-0 bg-white">
+                                <button type="button" class="btn btn-secondary text-uppercase rounded-0 px-4" onclick="nextStep()">Next</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="form-step">
+                            <div class="row g-4">
+                                <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                                    <div class="select_persons bg-white text-center p-md-5 p-sm-4 p-4 h-auto">
+                                        <h4 class="mb-md-5 mb-sm-4 mb-4">How Many People Are Coming?</h4>
+                                        <div class="people_count d-flex flex-wrap justify-content-center gap-2">
+                                            <div class="bg_light_grey1 d-flex align-items-center justify-content-center">1</div>
+                                            <div class="bg_light_grey1 d-flex align-items-center justify-content-center">2</div>
+                                            <div class="bg_light_grey1 d-flex align-items-center justify-content-center">3</div>
+                                            <div class="bg_light_grey1 d-flex align-items-center justify-content-center">4</div>
+                                            <div class="bg_light_grey1 d-flex align-items-center justify-content-center">5</div>
+                                            <div class="bg_light_grey1 d-flex align-items-center justify-content-center">6</div>
+                                            <div class="bg_light_grey1 d-flex align-items-center justify-content-center">7+</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="select_persons guest_details p-md-5 p-sm-4 p-4 bg-white">
+                                        <h4 class="mb-md-4 mb-sm-4 mb-4 text-center">Guest Details</h4>
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="guest_card">
+                                                <div class="p-4">
+                                                    <div class="guest_header d-flex align-items-center justify-content-between">
+                                                        <h4 class="mb-0">Guest 1</h4>
+                                                        <div class="d-flex align-items-center justify-content-end gap-3">
+                                                            <span class="text-uppercase">Primary</span>
+                                                            <a href="#/" class="text-decoration-underline">Edit</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row g-4 mt-4">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="ami">
+                                                                <h5>Luxury Manicure - Polish</h5>
+                                                                <ul>
+                                                                    <li>- Gel Removal</li>
+                                                                    <li>- Extended Massage</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="ami">
+                                                                <h5>Signature Pedicure - Polish</h5>
+                                                                <ul>
+                                                                    <li>- Gel Removal</li>
+                                                                    <li>- Extended Massage</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="addrecord info-block px-4 py-3 d-flex flex-wrap align-items-center justify-content-start gap-2">
+                                                    <div class="medicalinfo w-100 pt-2">
+                                                        <h4 class="text-dark fs-6">Add medical info / access needs</h4>
+                                                        <textarea class="form-control w-100 rounded-0"></textarea>
+                                                        <p class="mb-2 fs-7 mt-2">Add any details of any allergies, medical conditions or contra-indications that we should be aware of, or any special access requirements.</p>
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <a href="#/" class="addinfo">
+                                                            <i class="fa-solid fa-circle-plus"></i> Add Medical Record
+                                                        </a>
+                                                        <a href="#/" class="removeinfo">
+                                                            <i class="fa-solid fa-circle-minus"></i> Remove Medical Info
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="guest_card">
+                                                <div class="p-4">
+                                                    <div class="guest_header d-flex flex-wrap gap-3 align-items-center justify-content-between">
+                                                        <h4 class="mb-0">Guest 2</h4>
+                                                        <div class="d-flex align-items-center justify-content-end gap-3">
+                                                            <button class="btn btn-primary rounded-0 px-3 py-0 ls-0">Same as Primary Guest</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row g-4 mt-4">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="ami">
+                                                                <h5>Luxury Manicure - Polish</h5>
+                                                                <ul>
+                                                                    <li>- Gel Removal</li>
+                                                                    <li>- Extended Massage</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="ami">
+                                                                <h5>Signature Pedicure - Polish</h5>
+                                                                <ul>
+                                                                    <li>- Gel Removal</li>
+                                                                    <li>- Extended Massage</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="addrecord info-block px-4 py-3 d-flex flex-wrap align-items-center justify-content-start gap-2">
+                                                    <div class="medicalinfo w-100 pt-2">
+                                                        <h4 class="text-dark fs-6">Add medical info / access needs</h4>
+                                                        <textarea class="form-control w-100 rounded-0"></textarea>
+                                                        <p class="mb-2 fs-7 mt-2">Add any details of any allergies, medical conditions or contra-indications that we should be aware of, or any special access requirements.</p>
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <a href="#/" class="addinfo">
+                                                            <i class="fa-solid fa-circle-plus"></i> Add Medical Record
+                                                        </a>
+                                                        <a href="#/" class="removeinfo">
+                                                            <i class="fa-solid fa-circle-minus"></i> Remove Medical Info
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white py-5 px-sm-0 px-4 pt-0 w-100 d-flex align-items-center justify-content-center gap-2">
+                                        <button class="btn btn-primary text-uppercase rounded-0 px-sm-5 px-4" onclick="prevStep()">Back</button>
+                                        <button class="btn btn-secondary text-uppercase rounded-0 px-sm-5 px-4" onclick="nextStep()">Next Step</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                                    <div class="booking_summary">
+                                        <div class="short_info" style="position:unset;">
+                                            <h4 class="mb-4 tetx-start text-black">Booking Summery</h4>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block">Location</label>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <p class="m-0 w-100 mw-100">Takhasussi Street</p>
+                                                </div>
+                                            </div>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block">Guests</label>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <p class="m-0 w-100  mw-100">2</p>
+                                                </div>
+                                            </div>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block">Date & Time</label>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <p class="m-0  mw-100 w-100">11:10, Wednesday, 2 July 2025</p>
+                                                </div>
+                                            </div>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block mb-2">Services</label>
+                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                    <p class="m-0 mw-100 w-100">Guest 1</p>
+                                                    <p class="m-0 mw-100 w-100">Signature Manicure - Polish</p>
+                                                    <ul class="addonlist m-0 mt-2 p-0 d-flex flex-column gap-2">
+                                                        <li><i class="fa-solid fa-circle-plus"></i> Addon -  Extended Massage</li>
+                                                        <li><i class="fa-solid fa-circle-plus"></i> N.R. - BIAB / Super Gel Overlay Removal</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button class="w-100 text-capitalize btn btn-primary rounded-0" style="letter-spacing: 0;">See all guests services</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="form-step">
+                            <div class="row g-4">
+                                <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                                    <div class="choose_services">
+                                        <div class="chse1">
+                                            <ul class="nav nav-tabs text-center justify-content-center level1 border-0 mb-2 bg-white p-4" id="myTab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="active border-0 text-uppercase" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Guest 1</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="border-0 text-uppercase" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Guest 2</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                    <div class="c_services bg-white  p-4">
+                                                        <h4 class="mb-5 mt-4 text-center">Choose Your Service</h4>
+                                                        <div class="tabscrolling">
+                                                            <ul class="nav nav-tabs level2" id="myTab" role="tablist">
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link active" id="one-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab" aria-controls="one" aria-selected="true">Classic  (0/2)</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="two-tab" data-bs-toggle="tab" data-bs-target="#two" type="button" role="tab" aria-controls="two" aria-selected="false">Dry- Russian  (0/1)</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="three-tab" data-bs-toggle="tab" data-bs-target="#three" type="button" role="tab" aria-controls="three" aria-selected="false">Massages  (0/1)</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="four-tab" data-bs-toggle="tab" data-bs-target="#four" type="button" role="tab" aria-controls="four" aria-selected="false">Lashes  (0/1)</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="five-tab" data-bs-toggle="tab" data-bs-target="#five" type="button" role="tab" aria-controls="five" aria-selected="false">threading  (0/1)</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tab-content" id="myTabContent">
+                                                            <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                                                                <div class="cnt_part">
+                                                                    <h4 class="text-center w-100 mb-4">Classic</h4>
+                                                                    <div class="row g-4">
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item selected">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">selected</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h4 class="text-center w-100 mb-4 mt-5">Combo — Pedicures</h4>
+                                                                    <div class="row g-4">
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                                                                <div class="cnt_part">
+                                                                    <h4 class="text-center w-100 mb-4">Dry- Russian</h4>
+                                                                    <div class="row g-3">
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item des2 d-flex flex-wrap justify-content-between p-0">
+                                                                                <div class="img_item h-100">
+                                                                                    <img src="assets/images/services/look-books.png" class="img-fluid h-100" alt="" title="">
+                                                                                </div>
+                                                                                <div class="othr-det">
+                                                                                    <label class="card_stts">Popular</label>
+                                                                                    <h4>Luxury Manicure - Naked</h4>
+                                                                                    <div class="timline d-flex align-items-center justify-content-start gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                    </div>
+                                                                                    <p>Shapping | Buffing | Your Choice of Finish</p>
+                                                                                    <div class="d-flex flex-wrap align-items-center justify-content-end">
+                                                                                        <button class="btn btn-primary text-uppercase rounded-0 px-2">select</button>
+                                                                                        
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item des2 d-flex flex-wrap justify-content-between p-0">
+                                                                                <div class="img_item h-100">
+                                                                                    <img src="assets/images/services/look-books.png" class="img-fluid h-100" alt="" title="">
+                                                                                </div>
+                                                                                <div class="othr-det">
+                                                                                    <label class="card_stts">Popular</label>
+                                                                                    <h4>Luxury Manicure - Naked</h4>
+                                                                                    <div class="timline d-flex align-items-center justify-content-start gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                    </div>
+                                                                                    <p>Shapping | Buffing | Your Choice of Finish</p>
+                                                                                    <div class="d-flex flex-wrap align-items-center justify-content-end">
+                                                                                        <button class="btn btn-primary text-uppercase rounded-0 px-2">select</button>
+                                                                                        
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item des2 d-flex flex-wrap justify-content-between p-0">
+                                                                                <div class="img_item h-100">
+                                                                                    <img src="assets/images/services/look-books.png" class="img-fluid h-100" alt="" title="">
+                                                                                </div>
+                                                                                <div class="othr-det">
+                                                                                    <label class="card_stts">Popular</label>
+                                                                                    <h4>Luxury Manicure - Naked</h4>
+                                                                                    <div class="timline d-flex align-items-center justify-content-start gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                    </div>
+                                                                                    <p>Shapping | Buffing | Your Choice of Finish</p>
+                                                                                    <div class="d-flex flex-wrap align-items-center justify-content-end">
+                                                                                        <button class="btn btn-primary text-uppercase rounded-0 px-2">select</button>
+                                                                                        
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item des2 d-flex flex-wrap justify-content-between p-0">
+                                                                                <div class="img_item h-100">
+                                                                                    <img src="assets/images/services/look-books.png" class="img-fluid h-100" alt="" title="">
+                                                                                </div>
+                                                                                <div class="othr-det">
+                                                                                    <label class="card_stts">Popular</label>
+                                                                                    <h4>Luxury Manicure - Naked</h4>
+                                                                                    <div class="timline d-flex align-items-center justify-content-start gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                    </div>
+                                                                                    <p>Shapping | Buffing | Your Choice of Finish</p>
+                                                                                    <div class="d-flex flex-wrap align-items-center justify-content-end">
+                                                                                        <button class="btn btn-primary text-uppercase rounded-0 px-2">select</button>
+                                                                                        
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+                                                                <div class="cnt_part">
+                                                                    <h4 class="text-center w-100 mb-4">Massages</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
+                                                                <div class="cnt_part">
+                                                                    <h4 class="text-center w-100 mb-4">Lashes</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="five-tab">
+                                                                <div class="cnt_part">
+                                                                    <h4 class="text-center w-100 mb-4">threading</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="c_services c_s2 bg-white p-4">
+                                                        <h4 class="mb-4 mt-4 text-center">Choose Add-Ons For Your Manicure</h4>
+                                                        <div class="cnt_part">
+                                                            <h4 class="text-center w-100 mb-4 text-uppercase">Manicures Add-ons  (0/1)</h4>
+                                                            <div class="row g-4">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                    <div class="serv_item">
+                                                                        <h4>BIAB / Super Gel Overlay</h4>
+                                                                        <p>A protective layer of builder gel is applied before polish or gel. Formulated to strengthen weak, brittle nails and promote natural nail growth.</p>
+                                                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                            <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                            <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                <span>40 Mins</span>
+                                                                                <span>SAR 38</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                    <div class="serv_item">
+                                                                        <h4>French Finish (Polish or Gel)</h4>
+                                                                        <p>Upgrade your manicure with a classic French tip, in white or any color of your choice. Available in polish or long-lasting gel</p>
+                                                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                            <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                            <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                <span>40 Mins</span>
+                                                                                <span>SAR 38</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                    <div class="serv_item">
+                                                                        <h4>Chrome Finish</h4>
+                                                                        <p>A layer of luxe, light-reflecting chrome. AKA the trending ‘Glazed Donut’ manicure, available in four stunning shades.</p>
+                                                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                            <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                            <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                <span>40 Mins</span>
+                                                                                <span>SAR 38</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                    <div class="serv_item">
+                                                                        <h4>Extended Massage</h4>
+                                                                        <p>Extend any treatment with 10 more minutes of indulgent massage.</p>
+                                                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                            <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                            <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                <span>40 Mins</span>
+                                                                                <span>SAR 38</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="no_addons my-4 d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                                                <h5 class="m-0">No Addons Needed</h5>
+                                                                <button class="btn btn-primary text-uppercase rounded-0 px-3">selected</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="c_services c-s3 bg-white p-4">
+                                                        <h4 class="mb-4 mt-4 text-center">Do You Need Removal?</h4>
+                                                        <div class="d-flex align-items-center justify-content-center gap-2">
+                                                            <button class="btn btn-primary text-uppercase rounded-0 px-5" onclick="prevStep()">Yes</button>
+                                                            <button class="btn btn-primary text-uppercase rounded-0 px-5"  onclick="nextStep()">no</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                    <div class="c_services bg-white p-4">
+                                                        <h4 class="mb-5 mt-4 text-center">Choose Your Service 2</h4>
+                                                        <div class="tabscrolling">
+                                                            <ul class="nav nav-tabs level2" id="myTab" role="tablist">
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link active" id="six-tab" data-bs-toggle="tab" data-bs-target="#six" type="button" role="tab" aria-controls="six" aria-selected="true">Classic  (0/2)</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="seven-tab" data-bs-toggle="tab" data-bs-target="#seven" type="button" role="tab" aria-controls="seven" aria-selected="false">Dry- Russian  (0/1)</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="eight-tab" data-bs-toggle="tab" data-bs-target="#eight" type="button" role="tab" aria-controls="eight" aria-selected="false">Massages  (0/1)</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="nine-tab" data-bs-toggle="tab" data-bs-target="#nine" type="button" role="tab" aria-controls="nine" aria-selected="false">Lashes  (0/1)</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="ten-tab" data-bs-toggle="tab" data-bs-target="#ten" type="button" role="tab" aria-controls="ten" aria-selected="false">threading  (0/1)</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tab-content" id="myTabContent">
+                                                            <div class="tab-pane fade show active" id="six" role="tabpanel" aria-labelledby="six-tab">
+                                                                <div class="cnt_part">
+                                                                    <h4 class="text-center w-100 mb-4">Classic</h4>
+                                                                    <div class="row g-4">
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item selected">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">selected</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h4 class="text-center w-100 mb-4 mt-5">Combo — Pedicures</h4>
+                                                                    <div class="row g-4">
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                            <div class="serv_item">
+                                                                                <h4>Luxury Manicure - Naked</h4>
+                                                                                <p>Indulge in the ultimate manicure experience. Expert shaping, buffing (with an optional matte or shine finish), cuticle care, extended massage and a sumptuous hot cream treatment, with no polish or gel for a natural mani alternative.</p>
+                                                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                                                    <button class="btn btn-primary text-uppercase rounded-0 px-3">select</button>
+                                                                                    <div class="timline d-flex align-items-center justify-content-end gap-3">
+                                                                                        <span>40 Mins</span>
+                                                                                        <span>SAR 38</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="seven" role="tabpanel" aria-labelledby="seven-tab">
+                                                                <div class="cnt_part">
+                                                                    <h4 class="text-center w-100 mb-4">Dry- Russian</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="eight" role="tabpanel" aria-labelledby="eight-tab">
+                                                                <div class="cnt_part">
+                                                                    <h4 class="text-center w-100 mb-4">Massages</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="nine" role="tabpanel" aria-labelledby="nine-tab">
+                                                                <div class="cnt_part">
+                                                                    <h4 class="text-center w-100 mb-4">Lashes</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="ten" role="tabpanel" aria-labelledby="ten-tab">
+                                                                <div class="cnt_part">
+                                                                    <h4 class="text-center w-100 mb-4">threading</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                                    <div class="booking_summary">
+                                        <div class="short_info" style="position:unset;">
+                                            <h4 class="mb-4 tetx-start text-black">Booking Summery</h4>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block">Location</label>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <p class="m-0 w-100 mw-100">Takhasussi Street</p>
+                                                </div>
+                                            </div>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block">Guests</label>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <p class="m-0 w-100  mw-100">2</p>
+                                                </div>
+                                            </div>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block">Date & Time</label>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <p class="m-0  mw-100 w-100">11:10, Wednesday, 2 July 2025</p>
+                                                </div>
+                                            </div>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block mb-2">Services</label>
+                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                    <p class="m-0 mw-100 w-100">Guest 1</p>
+                                                    <p class="m-0 mw-100 w-100">Signature Manicure - Polish</p>
+                                                    <ul class="addonlist m-0 mt-2 p-0 d-flex flex-column gap-2">
+                                                        <li><i class="fa-solid fa-circle-plus"></i> Addon -  Extended Massage</li>
+                                                        <li><i class="fa-solid fa-circle-plus"></i> N.R. - BIAB / Super Gel Overlay Removal</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button class="w-100 text-capitalize btn btn-primary rounded-0" style="letter-spacing: 0;">See all guests services</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="form-step">
+                            <div class="row g-4">
+                                <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                                    <div class="select_persons appointment bg-white p-5">
+                                        <h4 class="mb-md-4 mb-sm-4 mb-4 text-center">Choose Your Appointment Time</h4>
+                                        <div class="calender">
+                                            <h2 class="text-center my-5">Calender Developer Laga dega then main uski css kar dunga</h2>
+                                        </div>
+                                        <div class="bg-white py-5 pt-0 w-100 d-flex align-items-center justify-content-center gap-2">
+                                            <button type="button" class="btn btn-primary text-uppercase rounded-0 px-sm-5 px-4" onclick="prevStep()">Back</button>
+                                            <button type="button" class="btn btn-secondary text-uppercase rounded-0 px-sm-5 px-4" onclick="nextStep()">Next Step</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                                    <div class="booking_summary">
+                                        <div class="short_info" style="position:unset;">
+                                            <h4 class="mb-4 tetx-start text-black">Booking Summery</h4>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block">Location</label>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <p class="m-0 w-100 mw-100">Takhasussi Street</p>
+                                                </div>
+                                            </div>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block">Guests</label>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <p class="m-0 w-100  mw-100">2</p>
+                                                </div>
+                                            </div>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block">Date & Time</label>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <p class="m-0  mw-100 w-100">11:10, Wednesday, 2 July 2025</p>
+                                                </div>
+                                            </div>
+                                            <div class="full_address d-flex flex-wrap align-items-center justify-content-between mb-4">
+                                                <label class="text-uppercase fw-light mb-1 w-100 d-block mb-2">Services</label>
+                                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                    <p class="m-0 mw-100 w-100">Guest 1</p>
+                                                    <p class="m-0 mw-100 w-100">Signature Manicure - Polish</p>
+                                                    <ul class="addonlist m-0 mt-2 p-0 d-flex flex-column gap-2">
+                                                        <li><i class="fa-solid fa-circle-plus"></i> Addon -  Extended Massage</li>
+                                                        <li><i class="fa-solid fa-circle-plus"></i> N.R. - BIAB / Super Gel Overlay Removal</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button class="w-100 text-capitalize btn btn-primary rounded-0" style="letter-spacing: 0;">See all guests services</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Step 5 -->
+                        <div class="form-step">
+                            <div class="row g-4">
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                                    <div class="booking_summ select_persons bg-white p-sm-5 p-4">
+                                        <h4 class="mb-4 fs-3">Booking Summery</h4>
+                                        <div class="date_location d-flex flex-wrap justify-content-between gap-2">
+                                            <div class="dte d-flex flex-wrap align-items-start justify-content-between gap-2">
+                                                <div class="">
+                                                    <label class="text-uppercase fs-7">Date & Time</label>
+                                                    <h5>Wednesday, 2 July 2025, 11:10</h5>
+                                                </div>
+                                                <a href="#/">Edit</a>
+                                            </div>
+                                            <div class="dte d-flex flex-wrap align-items-start justify-content-between gap-2">
+                                                <div class="">
+                                                    <label class="text-uppercase fs-7">Location</label>
+                                                    <h5>Takhasussi Street</h5>
+                                                </div>
+                                                <a href="#/">Edit</a>
+                                            </div>
+                                        </div>
+                                        <div class="guestdet">
+                                            <div class="d-flex flex-wrap align-items-center justify-content-between py-4">
+                                                <div class="d-flex align-items-center justify-content-start gap-4">
+                                                    <label class="text-uppercase fs-7">Numbers of Guests</label>
+                                                    <span class="fs-7">2</span>
+                                                </div>
+                                                <a href="#/" class="fs-7">Edit</a>
+                                            </div>
+                                        </div>
+                                        <div class="gst_det d-flex flex-column gap-3">
+                                            <div class="f_det">
+                                                <h4>Guest 1</h4>
+                                                <p class="m-0 mw-100 w-100" style="font-weight:600;">Signature Manicure - Polish</p>
+                                                <ul class="addonlist m-0 mt-2 p-0 d-flex flex-column gap-2">
+                                                    <li><i class="fa-solid fa-circle-plus"></i> Addon -  Extended Massage</li>
+                                                    <li><i class="fa-solid fa-circle-plus"></i> Nail Removal - BIAB / Super Gel Overlay Removal</li>
+                                                </ul>
+                                            </div>
+                                            <div class="f_det">
+                                                <h4>Guest 2</h4>
+                                                <p class="m-0 mw-100 w-100" style="font-weight:600;">Signature Manicure - Polish</p>
+                                                <ul class="addonlist m-0 mt-2 mb-4 p-0 d-flex flex-column gap-2">
+                                                    <li><i class="fa-solid fa-circle-plus"></i> No Addons</li>
+                                                </ul>
+                                                <p class="m-0 mb-2 mw-100 w-100 fs-7" style="font-weight:600;">Add medical info / access needs</p>
+                                                <p class="m-0 smlep">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor</p>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="confirmbking bg-white">
+                                        <div class="ttlpay d-flex align-items-start justify-content-between  p-4">
+                                            <div>
+                                                <label class="d-block w-100 fs-4">Total</label>
+                                                <span class="d-block w-100 fs-7">Payable at location</span>
+                                            </div>
+                                            <div class="amt fs-4">SAR 200.00</div>
+                                        </div>
+                                        <div class="secure_card p-4">
+                                            <h5>Secure your boooking with</h5>
+                                            <p>Your card will not be charged until after your appointment</p>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label text-uppercase" for="flexRadioDefault1">
+                                                    Master / Visa
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="agreecheck p-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                        Tick to confirm agreement with our <a href="#/">Terms and Conditions</a> and to confirm you have added all details of relevant allergies or medical information. We require card details to hold your booking - you will not be charged. You are free to cancel/change your appointment up to 12 hours before with no charge. Cancellations/changes with less than 12 hours notice and no shows are charged in full using the card on file.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <button class="btn btn-secondary rounded-0 text-uppercase w-100" onclick="nextStep()">Confirm Booking</button>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="form-step">
+                            <div class="col-lg-7 col-md-8 col-sm-12 col-12 mx-auto">
+                                <div class="reservationdone">
+                                    <div class="succmsg text-center">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <h4 class="text-center mt-3">You Reservations is Completed</h4>
+                                    </div>
+                                    <div class="bs_content bg-white p-md-5 p-sm-4 p-4 mt-5">
+                                        <h5 class="text-center fs-5">Booking Summery</h5>
+                                        <div class="final_det mt-4 pt-4">
+                                            <div class="date_location d-flex flex-wrap justify-content-between">
+                                                <div class="dte">
+                                                    <label class="text-uppercase fs-7">Date & Time</label>
+                                                    <h5>Wednesday, 2 July 2025, 11:10</h5>
+                                                </div>
+                                                <div class="dte">
+                                                    <label class="text-uppercase fs-7">Location</label>
+                                                    <h5>Takhasussi Street</h5>
+                                                </div>
+                                            </div>
+                                            <div class="guestdet">
+                                                <div class="py-4">
+                                                    <div class="d-flex align-items-center justify-content-center gap-4">
+                                                        <label class="text-uppercase fs-7">Numbers of Guests</label>
+                                                        <span class="fs-7">2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gst_det d-flex flex-column gap-3">
+                                                <div class="f_det">
+                                                    <h4>Guest 1</h4>
+                                                    <p class="m-0 mw-100 w-100" style="font-weight:600;">Signature Manicure - Polish</p>
+                                                    <ul class="addonlist m-0 mt-2 p-0 d-flex flex-column gap-2">
+                                                        <li><i class="fa-solid fa-circle-plus"></i> Addon -  Extended Massage</li>
+                                                        <li><i class="fa-solid fa-circle-plus"></i> Nail Removal - BIAB / Super Gel Overlay Removal</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="f_det">
+                                                    <h4>Guest 2</h4>
+                                                    <p class="m-0 mw-100 w-100" style="font-weight:600;">Signature Manicure - Polish</p>
+                                                    <ul class="addonlist m-0 mt-2 mb-4 p-0 d-flex flex-column gap-2">
+                                                        <li><i class="fa-solid fa-circle-plus"></i> No Addons</li>
+                                                    </ul>
+                                                    <p class="m-0 mb-2 mw-100 w-100 fs-7" style="font-weight:600;">Add medical info / access needs</p>
+                                                    <p class="m-0 smlep">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor</p>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <button class="btn btn-primary text-uppercase rounded-0">Book another treatment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        <footer class="footer padd80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="reach_us f_column">
+                                    <h4 class="fw-light mb-4">Reach us</h4>
+                                    <div class="d-flex flex-md-column flex-sm-row flex-row justify-content-sm-start justify-content-between">
+                                        <div class="mb-4 me-md-0 me-sm-5 me-0">
+                                            <label class="text-uppercase d-block w-100">FOr Bookings</label>
+                                            <span><a href="tel:0112014444">011 201 4444</a></span>
+                                        </div>
+                                        <div>
+                                            <label class="text-uppercase d-block w-100">For general inquiries</label>
+                                            <span class="text-uppercase"><a
+                                                    href="mailto:info@four.com.sa">info@four.com.sa</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <div class="f_links f_column">
+                                    <h4 class="fw-light mb-4">Locations</h4>
+                                    <ul class="m-0 p-0 list-unstyled d-flex flex-column gap-2">
+                                        <li><a href="#/" class="text-decoration-none text-uppercase">Takhasussi
+                                                Street</a></li>
+                                        <li><a href="#/" class="text-decoration-none text-uppercase">Aqiq</a></li>
+                                        <li><a href="#/" class="text-decoration-none text-uppercase">Diplomatic
+                                                Quaters</a></li>
+                                        <li><a href="#/" class="text-decoration-none text-uppercase">Kafd</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <div class="f_links f_column">
+                                    <h4 class="fw-light mb-4">Information</h4>
+                                    <ul class="m-0 p-0 list-unstyled d-flex flex-column gap-2">
+                                        <li><a href="#/" class="text-decoration-none text-uppercase">Services</a></li>
+                                        <li><a href="#/" class="text-decoration-none text-uppercase">Careers</a></li>
+                                        <li><a href="#/"
+                                                class="text-decoration-none text-uppercase text-uppercase">Terms</a>
+                                        </li>
+                                        <li><a href="#/" class="text-decoration-none text-uppercase">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="newsletter_signup f_column mt-lg-0 mt-md-5 mt-sm-5 mt-5">
+                            <h4 class="fw-light mb-4">Sign up for newsletter</h4>
+                            <form action="" method="">
+                                <div class="form-group position-relative">
+                                    <input type="email" placeholder="ex. demo@example.com" name="email"
+                                        class="form-control bg-white">
+                                    <button type="submit" class="position-absolute border-0 bg-transparent"><i
+                                            class="fa-solid fa-angle-right"></i></button>
+                                </div>
+                            </form>
+                            <div class="download_app mt-4">
+                                <h5 class="fw-light">Download mobile app</h5>
+                                <div class="d-flex align-items-center justify-content-start gap-2 mt-3">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/play-store.png" class="img-fluid" alt="Play Store"
+                                            title="Play Store">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/app-store.png" class="img-fluid" alt="Apple Store"
+                                            title="Apple Store">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright padd80 pb-0">
+                <div class="container text-center">
+                    <p class="fw-light position-relative w-fit-content mb-0 mx-auto">&copy; FOUR SPA 2021</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+            $('.info-block .removeinfo').hide();
+            $('.info-block .medicalinfo').hide();
+
+            $('.info-block .addinfo').click(function(){
+                const container = $(this).closest('.info-block');
+                container.find('.medicalinfo').slideToggle();
+                $(this).hide();
+                container.find('.removeinfo').show();
+            });
+
+            $('.info-block .removeinfo').click(function(){
+                const container = $(this).closest('.info-block');
+                container.find('.medicalinfo').slideToggle();
+                $(this).hide();
+                container.find('.addinfo').show();
+            });
+            $('.people_count div').click(function(){
+                $('.people_count div').removeClass('active'); 
+                $(this).addClass('active');       
+            });
+        });
+        
+
+        let currentStep = 0;
+          const steps = document.querySelectorAll('.form-step');
+          const headers = document.querySelectorAll('.step');
+
+          function updateSteps() {
+            steps.forEach((step, i) => {
+              step.classList.toggle('active', i === currentStep);
+              headers[i].classList.toggle('active', i === currentStep);
+              headers[i].classList.toggle('completed', i < currentStep);
+            });
+          }
+
+          function nextStep() {
+            if (currentStep < steps.length - 1) {
+              currentStep++;
+              updateSteps();
+            }
+          }
+
+          function prevStep() {
+            if (currentStep > 0) {
+              currentStep--;
+              updateSteps();
+            }
+          }
+
+          document.getElementById('stepper-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            //alert('Form Submitted!');
+          });
+    </script>
+</body>
+
+</html>
